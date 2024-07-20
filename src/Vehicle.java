@@ -23,15 +23,23 @@
          this.wheelsCount = wheelsCount;
      }
 
-     public void updateTyre() {
+     protected void updateTyre() {
          System.out.println("Меняем покрышку");
      }
 
-     public void check() {
-         System.out.println("Обслуживаем " + this.getModelName());
-         for (int i = 0; i < this.getWheelsCount(); i++) {
-             this.updateTyre();
+     protected void checkEngine() {
+         System.out.println("Проверяем двигатель");
+     }
 
+
+     protected void checkTrailer() {
+         System.out.println("Проверяем прицеп");
+     }
+
+
+     public void check() {
+         for (int i = 0; i < getWheelsCount(); i++) {
+             updateTyre();
          }
 
      }

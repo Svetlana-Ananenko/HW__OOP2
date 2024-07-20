@@ -11,12 +11,12 @@
          Bicycle bicycle = new Bicycle("bicycle1", 2);
          Bicycle bicycle2 = new Bicycle("bicycle2", 2);
 
-         ServiceStation station = new ServiceStation();
-         ServiceStation.check(car, null, null);
-         ServiceStation.check(car2, null, null);
-         ServiceStation.check(null, bicycle, null);
-         ServiceStation.check(null, bicycle2, null);
-         ServiceStation.check(null, null, truck);
-         ServiceStation.check(null, null, truck2);
+         ServiceStation service = new ServiceStation();
+         service.check(car);
+         service.check(car2);
+         service.check(bicycle);
+         service.check(bicycle2);
+         service.check(truck);
+         service.check(truck2);
      }
  }
