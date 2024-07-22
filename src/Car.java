@@ -1,16 +1,16 @@
  public class Car extends Vehicle {
 
-     public Car(String modelName, int wheelsCount) {
+     protected Car(String modelName, int wheelsCount) {
          super(modelName, wheelsCount);
      }
 
 
-     public void checkEngine() {
+     protected void checkEngine() {
          System.out.println("Проверяем двигатель");
      }
 
      @Override
-     public void check() {
+     protected void check() {
          super.check();
          checkEngine();
      }

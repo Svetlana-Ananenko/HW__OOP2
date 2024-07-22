@@ -1,10 +1,10 @@
  public class Bicycle extends Vehicle {
-     public Bicycle(String modelName, int wheelsCount) {
+     protected Bicycle(String modelName, int wheelsCount) {
          super(modelName, wheelsCount);
      }
 
      @Override
-     public void check() {
+     protected void check() {
          super.check();
      }
  }

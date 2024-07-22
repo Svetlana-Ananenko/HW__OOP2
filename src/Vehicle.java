@@ -1,25 +1,25 @@
  public class Vehicle {
-     public String modelName;
-     public int wheelsCount;
+     protected String modelName;
+     protected int wheelsCount;
 
-     public Vehicle(String modelName, int wheelsCount) {
+     protected Vehicle(String modelName, int wheelsCount) {
          this.modelName = modelName;
          this.wheelsCount = wheelsCount;
      }
 
-     public String getModelName() {
+     protected String getModelName() {
          return modelName;
      }
 
-     public int getWheelsCount() {
+     protected int getWheelsCount() {
          return wheelsCount;
      }
 
-     public void setModelName(String modelName) {
+     protected void setModelName(String modelName) {
          this.modelName = modelName;
      }
 
-     public void setWheelsCount(int wheelsCount) {
+     protected void setWheelsCount(int wheelsCount) {
          this.wheelsCount = wheelsCount;
      }
 
@@ -37,7 +37,7 @@
      }
 
 
-     public void check() {
+     protected void check() {
          for (int i = 0; i < getWheelsCount(); i++) {
              updateTyre();
          }

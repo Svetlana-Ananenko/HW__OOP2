@@ -1,18 +1,18 @@
      public class Truck extends Car {
-     public Truck(String modelName, int wheelsCount) {
+         protected Truck(String modelName, int wheelsCount) {
          super(modelName, wheelsCount);
      }
 
-     public void checkEngine() {
+         protected void checkEngine() {
          System.out.println("Проверяем двигатель");
      }
 
-     public void checkTrailer() {
+         protected void checkTrailer() {
          System.out.println("Проверяем прицеп");
      }
 
      @Override
-     public void check() {
+     protected void check() {
          super.check();
          checkTrailer();
      }
